@@ -10,6 +10,7 @@ set fileencodings+=,ucs-2le,ucs-2,utf-8,euc-jp
 
 " 検索文字をハイライト
 set hlsearch 
+
 " 大文字小文字無視
 set ignorecase
 " 大文字ではじめたら大文字小文字無視しない
@@ -28,16 +29,22 @@ set shiftwidth=2
 
 " Insertモードで: <Tab> を挿入するのに、適切な数の空白を使う。（タブをスペースに展開する）
 set expandtab
+
 " 新しい行を開始したときに、新しい行のインデントを現在行と同じ量にする。
 set autoindent
+
 " compatible の機能をオフにします。compatible のオプションを有効にすると、Vimの便利な機能が使えなくなる。 初期値：オン
 set nocompatible
+
 " 強調表示(色付け)のON/OFF設定。
 syntax on
+
 " 行数表示
 set nu
+
 " バッファを切替えてもundoの効力を失わない
 set hidden
+
 " コマンドライン補完を拡張モードにする
 set wildmenu
 set wildmode=list:longest,full
