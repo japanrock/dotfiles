@@ -1,3 +1,5 @@
+"see : http://d.hatena.ne.jp/japanrock_pg/20090805/1249473550
+
 " 文字コードの設定
 " fileencodingsの設定ではencodingの値を一番最後に記述する
 " デフォルトの文字コード
