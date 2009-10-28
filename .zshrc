@@ -44,6 +44,7 @@ function chpwd() { ls -la }
 ## 参考:http://github.com/ryanb/dotfiles/blob/master/zsh/aliases
 alias %=' '
 
+
 # ls
 alias ls="ls -F"
 alias l="ls -lAh"
