@@ -43,6 +43,7 @@ function chpwd() { ls -la }
 
 ## 参考:http://github.com/ryanb/dotfiles/blob/master/zsh/aliases
 alias %=' '
+alias v="vim"
 
 # ls
 alias ls="ls -F"
