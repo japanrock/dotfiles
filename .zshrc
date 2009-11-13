@@ -11,6 +11,9 @@ setopt prompt_subst
 ## ビープを鳴らさない
 setopt nobeep
 
+#ファイル名などを補完しすぎたのをC-wで戻れるようにする。( http://d.hatena.ne.jp/walf443/20071119/1195487813 )
+export WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
+
 ## 補完機能
 autoload -U compinit
 compinit
@@ -41,8 +44,9 @@ setopt pushd_ignore_dups
 ## cd したあとにlsが実行される
 function chpwd() { ls -la }
 
-## 参考:http://github.com/ryanb/dotfiles/blob/master/zsh/aliases
+## via http://github.com/ryanb/dotfiles/blob/master/zsh/aliases
 alias %=' '
+alias v="vim"
 
 # ls
 alias ls="ls -F"
