@@ -64,3 +64,6 @@ _generate () {
 
 compdef _generate generate
 compdef _generate destroy
+
+# svn
+export SVN_EDITOR="vim"
