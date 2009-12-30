@@ -67,3 +67,7 @@ compdef _generate destroy
 
 # svn
 export SVN_EDITOR="vim"
+
+# for Mac
+# export PATH=/opt/local/bin:/opt/local/sbin/:$PATH
+# export MANPATH=/opt/local/man:$MANPATH
