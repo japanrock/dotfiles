@@ -1,17 +1,17 @@
 ## This file encoding:utf8
 ## This file line feed code:LF
 
-## 文字コード
+## encoding
 #export LANG=ja_JP.UTF-8
 export LANG=ja_JP.eucJP 
 
-## 色を使う
+## use color
 setopt prompt_subst
 
-## ビープを鳴らさない
+## no beep
 setopt nobeep
 
-#ファイル名などを補完しすぎたのをC-wで戻れるようにする。( http://d.hatena.ne.jp/walf443/20071119/1195487813 )
+# see http://d.hatena.ne.jp/walf443/20071119/1195487813
 export WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
 
 # Path Setting
@@ -24,26 +24,20 @@ $HOME/local/bin $HOME/local/X11R6/bin \
 /dev
 )
 
-## 補完機能
 autoload -U compinit
 compinit
-## 補完候補を一覧表示
 setopt auto_list
-## 補完候補を詰めて表示
 setopt list_packed
 
-## プロンプト
+## prompt
 PROMPT="%/%% "
 PROMPT2="%_%% "
 SPROMPT="%r is correct? [n,y,a,e]: "
 
-## 履歴の保存先
+## history
 HISTFILE=$HOME/.zsh-history
-## メモリに展開する履歴の数
 HISTSIZE=100000
-## 保存する履歴の数
 SAVEHIST=100000
-## 直前と同じコマンドをヒストリに追加しない
 setopt hist_ignore_dups
 
 ## cd 時に自動で push
@@ -51,7 +45,7 @@ setopt auto_pushd
 ## 同じディレクトリを pushd しない
 setopt pushd_ignore_dups
 
-## cd したあとにlsが実行される
+## ls next to cd
 function chpwd() { ls -la }
 
 ## via http://github.com/ryanb/dotfiles/blob/master/zsh/aliases
@@ -64,7 +58,7 @@ alias l="ls -lAh"
 alias ll="ls -l"
 alias la='ls -A'
 
-# http://blog.s21g.com/articles/219 - script/generate補完関数
+# http://blog.s21g.com/articles/219
 _generate () {
   if [ ! -f .generators ]; then
     ./script/generate --help | grep '^  [^ ]*: ' | sed 's/[^:]*:/compadd/' | sed 's/\,//g' > .generators
