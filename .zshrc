@@ -40,9 +40,7 @@ HISTSIZE=100000
 SAVEHIST=100000
 setopt hist_ignore_dups
 
-## cd 時に自動で push
 setopt auto_pushd
-## 同じディレクトリを pushd しない
 setopt pushd_ignore_dups
 
 ## ls next to cd
