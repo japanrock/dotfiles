@@ -71,7 +71,12 @@ compdef _generate destroy
 export SVN_EDITOR="vim"
 
 # screen
-alias s='screen'
+alias sr='screen'
+
+# git
+alias g='git'
+alias s='git status'
+alias gn='git --no-pager'
 
 # for Mac
 # export PATH=/opt/local/bin:/opt/local/sbin/:$PATH
