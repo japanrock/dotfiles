@@ -64,7 +64,7 @@ alias l="ls -lAh"
 alias ll="ls -l"
 alias la='ls -A'
 
-# http://blog.s21g.com/articles/219 
+# http://blog.s21g.com/articles/219 - script/generate補完関数
 _generate () {
   if [ ! -f .generators ]; then
     ./script/generate --help | grep '^  [^ ]*: ' | sed 's/[^:]*:/compadd/' | sed 's/\,//g' > .generators
@@ -81,3 +81,6 @@ export SVN_EDITOR="vim"
 # screen
 alias s='screen'
 
+# for Mac
+# export PATH=/opt/local/bin:/opt/local/sbin/:$PATH
+# export MANPATH=/opt/local/man:$MANPATH
