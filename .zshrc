@@ -2,8 +2,8 @@
 ## This file line feed code:LF
 
 ## 文字コード
-export LANG=ja_JP.UTF-8
-#export LANG=ja_JP.eucJP 
+#export LANG=ja_JP.UTF-8
+export LANG=ja_JP.eucJP 
 
 ## 色を使う
 setopt prompt_subst
@@ -13,6 +13,16 @@ setopt nobeep
 
 #ファイル名などを補完しすぎたのをC-wで戻れるようにする。( http://d.hatena.ne.jp/walf443/20071119/1195487813 )
 export WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
+
+# Path Setting
+path=(
+$HOME/local/bin $HOME/local/X11R6/bin \
+/usr/local/RealPlayer8 \
+/bin /usr/local/bin /usr/bin \
+/usr/local/X11R6/bin /usr/X11R6/bin \
+/usr/local/bin/games /usr/games \
+/dev
+)
 
 ## 補完機能
 autoload -U compinit
@@ -53,3 +63,21 @@ alias ls="ls -F"
 alias l="ls -lAh"
 alias ll="ls -l"
 alias la='ls -A'
+
+# http://blog.s21g.com/articles/219 
+_generate () {
+  if [ ! -f .generators ]; then
+    ./script/generate --help | grep '^  [^ ]*: ' | sed 's/[^:]*:/compadd/' | sed 's/\,//g' > .generators
+  fi
+  `cat .generators`
+}
+
+compdef _generate generate
+compdef _generate destroy
+
+# svn
+export SVN_EDITOR="vim"
+
+# screen
+alias s='screen'
+
