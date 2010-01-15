@@ -71,7 +71,7 @@ compdef _generate destroy
 export SVN_EDITOR="vim"
 
 # screen
-alias sr='screen'
+alias sc='screen'
 
 # git
 alias g='git'
