@@ -77,6 +77,8 @@ alias sc='screen'
 alias g='git'
 alias s='git status'
 alias gn='git --no-pager'
+alias -g ci='commit'
+alias -g co='chekcout'
 
 # for Mac
 # export PATH=/opt/local/bin:/opt/local/sbin/:$PATH
