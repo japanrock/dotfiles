@@ -1,0 +1,8 @@
+[user]
+	name = japanrock
+	email = japanrock@gmail.com
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto

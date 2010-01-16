@@ -83,3 +83,5 @@ alias -g co='chekcout'
 # for Mac
 # export PATH=/opt/local/bin:/opt/local/sbin/:$PATH
 # export MANPATH=/opt/local/man:$MANPATH
+# export PATH=/Users/japanrock/bin/ruby/186p383/bin:$PATH
+# export PATH=/Developer/usr/bin:/Users/japanrock/bin/ruby/186p383/bin:/opt/local/bin:/opt/local/sbin/:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:$PATH
