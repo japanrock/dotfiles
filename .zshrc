@@ -69,6 +69,8 @@ compdef _generate destroy
 
 # svn
 export SVN_EDITOR="vim"
+alias -g st='status'
+alias svn_addall="svn status | grep '^?' | awk '{print \$2}' | xargs svn add"
 
 # screen
 alias sc='screen'
