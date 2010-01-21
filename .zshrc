@@ -21,7 +21,8 @@ $HOME/local/bin $HOME/local/X11R6/bin \
 /bin /usr/local/bin /usr/bin \
 /usr/local/X11R6/bin /usr/X11R6/bin \
 /usr/local/bin/games /usr/games \
-/dev
+/dev \
+/sbin
 )
 
 autoload -U compinit
