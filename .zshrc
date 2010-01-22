@@ -83,6 +83,9 @@ alias gn='git --no-pager'
 alias -g ci='commit'
 alias -g co='chekcout'
 
+# gems
+alias cd_gems='cd /usr/local/lib/ruby/gems/1.8/gems'
+
 # for Mac
 # export PATH=/opt/local/bin:/opt/local/sbin/:$PATH
 # export MANPATH=/opt/local/man:$MANPATH
