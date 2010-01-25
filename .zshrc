@@ -54,7 +54,7 @@ alias v="vim"
 # ls
 alias ls="ls -F"
 alias l="ls -lAh"
-alias ll="ls -l"
+alias ll="ls -la"
 alias la='ls -A'
 
 # http://blog.s21g.com/articles/219
