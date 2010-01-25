@@ -72,6 +72,7 @@ compdef _generate destroy
 export SVN_EDITOR="vim"
 alias -g st='status'
 alias svn_addall="svn status | grep '^?' | awk '{print \$2}' | xargs svn add"
+alias svndiff="svn diff --no-diff-deleted | less"
 
 # screen
 alias sc='screen'
