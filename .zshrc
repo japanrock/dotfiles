@@ -47,15 +47,19 @@ setopt pushd_ignore_dups
 ## ls next to cd
 function chpwd() { ls -la }
 
+#alias globals
+alias -g L='| less -R'
+alias -g st='status'
+
 ## via http://github.com/ryanb/dotfiles/blob/master/zsh/aliases
 alias %=' '
 alias v="vim"
 
 # ls
-alias ls="ls -F"
-alias l="ls -lAh"
-alias ll="ls -la"
-alias la='ls -A'
+alias ls="ls -F --color"
+alias l="ls -lAh --color"
+alias ll="ls -la --color"
+alias la='ls -A --color'
 
 # http://blog.s21g.com/articles/219
 _generate () {
@@ -70,7 +74,6 @@ compdef _generate destroy
 
 # svn
 export SVN_EDITOR="vim"
-alias -g st='status'
 alias svn_addall="svn status | grep '^?' | awk '{print \$2}' | xargs svn add"
 alias svndiff="svn diff --no-diff-deleted | less"
 
