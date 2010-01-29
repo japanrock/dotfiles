@@ -48,8 +48,13 @@ setopt pushd_ignore_dups
 function chpwd() { ls -la }
 
 #alias globals
-alias -g L='| less -R'
 alias -g st='status'
+alias -g G='| egrep'
+alias -g L='| less -R'
+alias -g H='| head'
+alias -g T='| tail'
+alias -g C='| pbcopy'
+alias -g W='| nkf -w'
 
 ## via http://github.com/ryanb/dotfiles/blob/master/zsh/aliases
 alias %=' '
