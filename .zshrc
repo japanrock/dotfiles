@@ -80,7 +80,8 @@ compdef _generate destroy
 # svn
 export SVN_EDITOR="vim"
 alias svn_addall="svn status | grep '^?' | awk '{print \$2}' | xargs svn add"
-alias svndiff="svn diff --no-diff-deleted | less"
+alias svndiff="svn diff --no-diff-deleted | less -R"
+## svn colordiff see http://d.hatena.ne.jp/Craftworks/20090418/1240082737
 
 # screen
 alias sc='screen'
