@@ -14,10 +14,12 @@ export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30
 export ZLS_COLORS=$LS_COLORS
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 
-PS1="[${USER}@${HOST%%.*} %1~]%(!.#.$) "
+## prompt
+PROMPT="%U$USER@%m%%%u "
 RPROMPT="[%~]"
+
 precmd () {
-  PS1="%{%(?.$fg[white].$fg[red])%}[${USER}@${HOST%%.*} %1~]%(!.#.$)%{$reset_color%} "
+  PROMPT="%{%(?.$fg[white].$fg[red])%}%U$USER@%m%%%u%{$reset_color%} "
 }
 
 ## no beep
@@ -41,11 +43,6 @@ autoload -U compinit
 compinit
 setopt auto_list
 setopt list_packed
-
-## prompt
-PROMPT="%/%% "
-PROMPT2="%_%% "
-SPROMPT="%r is correct? [n,y,a,e]: "
 
 ## history
 HISTFILE=$HOME/.zsh-history
