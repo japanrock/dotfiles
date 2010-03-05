@@ -95,7 +95,10 @@ alias svndiff="svn diff --no-diff-deleted | less -R"
 ## svn colordiff see http://d.hatena.ne.jp/Craftworks/20090418/1240082737
 
 # screen
-alias sc='screen'
+alias scr='screen'
+
+# rails
+alias sc='script/console'
 
 # git
 alias g='git'
