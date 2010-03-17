@@ -108,4 +108,4 @@ alias -g ci='commit'
 alias -g co='chekcout'
 
 # gems
-alias cd_gems='cd /usr/local/lib/ruby/gems/1.8/gems'
+alias cd_gems='cd `ruby -rubygems -e "puts Gem.path"`'
