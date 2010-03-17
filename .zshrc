@@ -64,7 +64,6 @@ alias -g H='| head'
 alias -g T='| tail'
 alias -g C='| pbcopy'
 alias -g W='| nkf -w'
-alias -g W='| nkf -w'
 alias -g XG='| xargs grep'
 
 ## via http://github.com/ryanb/dotfiles/blob/master/zsh/aliases
