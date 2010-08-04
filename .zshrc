@@ -30,7 +30,7 @@ export WORDCHARS="*?_-.[]~=&;!#$%^(){}<>"
 
 # Path Setting
 path=(
-$HOME/local/bin $HOME/local/X11R6/bin \
+$HOME/local/bin $HOME/local/X11R6/bin $HOME/bin/rak/bin \
 /usr/local/RealPlayer8 \
 /bin /usr/local/bin /usr/bin \
 /usr/local/X11R6/bin /usr/X11R6/bin \
