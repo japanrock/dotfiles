@@ -31,6 +31,10 @@ let g:rails_level=4
 let g:rails_default_file="app/controllers/application.rb"
 let g:rails_default_database="mysql"
 
+" The highlight is deleted by pushing the escape key two degrees.
+" See http://blog.appling.jp/archives/140
+nnoremap <Esc><Esc> :<C-u>set nohlsearch<Return>
+
 " rubycomplete.vim
 "" FileType settings
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
