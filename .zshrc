@@ -69,6 +69,7 @@ alias -g XG='| xargs grep'
 ## via http://github.com/ryanb/dotfiles/blob/master/zsh/aliases
 alias %=' '
 alias v="vim"
+alias c="cd"
 
 # ls
 alias ls="ls -F --color"
