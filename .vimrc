@@ -34,6 +34,10 @@ let g:rails_default_database="mysql"
 " The highlight is deleted by pushing the escape key two degrees.
 " See http://blog.appling.jp/archives/140
 nnoremap <Esc><Esc> :<C-u>set nohlsearch<Return>
+nnoremap / :<C-u>set hlsearch<Return>/
+nnoremap ? :<C-u>set hlsearch<Return>?
+nnoremap * :<C-u>set hlsearch<Return>*
+nnoremap # :<C-u>set hlsearch<Return>#
 
 " rubycomplete.vim
 "" FileType settings
