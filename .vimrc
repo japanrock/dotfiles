@@ -31,6 +31,14 @@ let g:rails_level=4
 let g:rails_default_file="app/controllers/application.rb"
 let g:rails_default_database="mysql"
 
+" http://www.e2esound.com/wp/2010/11/07/add_vimrc_settings/
+imap {} {}<Left>
+imap [] []<Left>
+imap () ()<Left>
+imap ¡È¡É ¡È¡É<Left>
+imap ¡É ¡É<Left>
+imap <> <><Left>
+
 " The highlight is deleted by pushing the escape key two degrees.
 " See http://blog.appling.jp/archives/140
 nnoremap <Esc><Esc> :<C-u>set nohlsearch<Return>
