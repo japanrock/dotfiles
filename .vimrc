@@ -46,6 +46,7 @@ nnoremap / :<C-u>set hlsearch<Return>/
 nnoremap ? :<C-u>set hlsearch<Return>?
 nnoremap * :<C-u>set hlsearch<Return>*
 nnoremap # :<C-u>set hlsearch<Return>#
+nnoremap <C-l> :BufExplorer<CR>
 
 " rubycomplete.vim
 "" FileType settings
