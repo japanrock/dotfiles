@@ -50,9 +50,7 @@ nnoremap <C-l> :BufExplorer<CR>
 
 http://d.hatena.ne.jp/yuroyoro/20101104/1288879591
 " CTRL-hjklでウィンドウ移動
-nnoremap <C-j> <C-w>f
 nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
 nnoremap <C-h> <C-w>h
 
 " rubycomplete.vim
