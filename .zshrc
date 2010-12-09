@@ -39,6 +39,9 @@ $HOME/local/bin $HOME/local/X11R6/bin $HOME/bin/rak/bin \
 /sbin
 )
 
+export PATH=/usr/local/bin:$PATH
+alias sudo="sudo env PATH=$PATH"
+
 autoload -U compinit
 compinit
 setopt auto_list
