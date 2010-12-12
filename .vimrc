@@ -28,6 +28,9 @@ let g:rails_level=4
 let g:rails_default_file="app/controllers/application.rb"
 let g:rails_default_database="mysql"
 
+" https://github.com/janx/vim-rubytest
+let g:rubytest_cmd_testcase = "ruby %p -n %c"
+
 " http://www.e2esound.com/wp/2010/11/07/add_vimrc_settings/
 imap {} {}<Left>
 imap [] []<Left>
