@@ -53,6 +53,9 @@ http://d.hatena.ne.jp/yuroyoro/20101104/1288879591
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 
+" http://vim-users.jp/2010/02/hack122/
+nnoremap Y y$
+
 " rubycomplete.vim
 "" FileType settings
 autocmd FileType ruby,eruby set omnifunc=rubycomplete#Complete
