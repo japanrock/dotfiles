@@ -48,7 +48,7 @@ nnoremap * :<C-u>set hlsearch<Return>*
 nnoremap # :<C-u>set hlsearch<Return>#
 nnoremap <C-l> :BufExplorer<CR>
 
-http://d.hatena.ne.jp/yuroyoro/20101104/1288879591
+" http://d.hatena.ne.jp/yuroyoro/20101104/1288879591
 " CTRL-hjklでウィンドウ移動
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
