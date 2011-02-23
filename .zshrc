@@ -1,9 +1,8 @@
 ## This file encoding:utf8
 ## This file line feed code:LF
 
-## encoding
-#export LANG=ja_JP.UTF-8
-export LANG=ja_JP.eucJP 
+## encoding file load
+[ -f ~/.zshrc.encoding ] && source ~/.zshrc.encoding
 
 ## use color
 autoload -U colors

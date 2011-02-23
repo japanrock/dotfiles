@@ -1,10 +1,7 @@
 "see : http://d.hatena.ne.jp/japanrock_pg/20090805/1249473550
 
-set encoding=utf-8
-set termencoding=utf-8
-set fileencoding=utf-8
-set fileencodings=ucs-bom,euc-jp,cp932,iso-2022-jp,utf-8
-set fileencodings+=,ucs-2le,ucs-2,utf-8,euc-jp
+" encoding file load
+:source ~/.vimrc.encoding
 
 set hlsearch 
 set ignorecase
@@ -98,3 +95,4 @@ hi PmenuSel guibg=#8cd0d3 guifg=#666666
 hi PmenuSbar guibg=#333333
 
 :source $VIMRUNTIME/macros/matchit.vim
+
