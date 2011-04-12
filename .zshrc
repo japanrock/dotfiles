@@ -39,12 +39,18 @@ $HOME/local/bin $HOME/local/X11R6/bin $HOME/bin/rak/bin \
 )
 
 export PATH=/usr/local/bin:$PATH
-alias sudo="sudo env PATH=$PATH"
+#alias sudo="sudo PATH=$PATH"
 
 autoload -U compinit
 compinit
 setopt auto_list
 setopt list_packed
+
+## cdd : see http://d.hatena.ne.jp/secondlife/20080218/1203303528
+source ~/bin/cdd
+function chpwd() {
+  _reg_pwd_screennum
+}
 
 ## history
 HISTFILE=$HOME/.zsh-history
