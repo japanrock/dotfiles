@@ -5,6 +5,9 @@ require 'rubygems'
 require "active_record"
 ActiveRecord::Base.logger = Logger.new(STDOUT)
 
+## http://doc.okkez.net/static/192/library/irb=2fcompletion.html
+require 'irb/completion'
+
 ## https://github.com/michaeldv/awesome_print
 require "awesome_print"
 
@@ -21,15 +24,6 @@ else # MacRuby
     end
   end.new
 end
-
-## http://doc.okkez.net/static/192/library/irb=2fcompletion.html
-require 'irb/completion'
-
-## http://journal.mycom.co.jp/articles/2006/12/22/wirble/index.html
-# start wirble (with color)
-require 'wirble'
-Wirble.init
-Wirble.colorize
 
 ## http://tagaholic.me/hirb/doc/
 # Hirb doesn't use with awesome_print
