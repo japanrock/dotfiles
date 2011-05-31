@@ -1,3 +1,9 @@
+## for config check
+begin
+
+## setup start -------------------------------------------------------------------------------
+
+
 ## IRB Manual
 # http://www.ruby-lang.org/ja/man/html/irb.html
 
@@ -13,7 +19,6 @@ require 'irb/completion'
 
 ## https://github.com/michaeldv/awesome_print
 require "awesome_print"
-
 unless IRB.version.include?('DietRB')
   IRB::Irb.class_eval do
     def output_value
@@ -61,3 +66,11 @@ end
 # IRB has history function already?
 #require 'irb/history'
 #IRB::History.start_client
+
+
+## setup end -------------------------------------------------------------------------------
+
+## for config check
+rescue Exception => e
+ p e
+end
