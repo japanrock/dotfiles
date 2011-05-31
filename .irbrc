@@ -1,3 +1,6 @@
+## IRB Manual
+# http://www.ruby-lang.org/ja/man/html/irb.html
+
 ## use rubygems
 require 'rubygems'
 
@@ -23,6 +26,29 @@ else # MacRuby
       object.ai
     end
   end.new
+end
+
+## see refe in IRB
+# http://d.hatena.ne.jp/secondlife/20051114/1131894899
+module Kernel
+  def r(arg)
+    puts `refe #{arg}`
+  end
+  private :r
+end
+
+class Module
+  def r(meth = nil)
+    if meth
+      if instance_methods(false).include? meth.to_s
+        puts `refe #{self}##{meth}`
+      else
+        super
+      end
+    else
+      puts `refe #{self}`
+    end
+  end
 end
 
 ## http://tagaholic.me/hirb/doc/
