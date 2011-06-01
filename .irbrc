@@ -7,8 +7,11 @@ begin
 ## IRB Manual
 # http://www.ruby-lang.org/ja/man/html/irb.html
 
-## use rubygems
+## rubygems
 require 'rubygems'
+
+## pp
+require 'pp'
 
 ## view sql when script/consle
 require "active_record"
@@ -33,7 +36,7 @@ else # MacRuby
   end.new
 end
 
-## see refe in IRB
+## can see refe in IRB
 # http://d.hatena.ne.jp/secondlife/20051114/1131894899
 module Kernel
   def r(arg)
@@ -55,6 +58,10 @@ class Module
     end
   end
 end
+
+## What methods
+# https://github.com/BMorearty/what_methods
+require 'what_methods'
 
 ## http://tagaholic.me/hirb/doc/
 # Hirb doesn't use with awesome_print
