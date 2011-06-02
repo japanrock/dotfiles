@@ -115,5 +115,8 @@ alias gn='git --no-pager'
 alias -g ci='commit'
 alias -g co='chekcout'
 
+# mysql
+alias my='mysql -u root'
+
 # gems
 alias cd_gems='cd `ruby -rubygems -e "puts Gem.path" | grep "/usr/local"`'
