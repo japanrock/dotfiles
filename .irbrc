@@ -7,9 +7,6 @@ begin
 ## IRB Manual
 # http://www.ruby-lang.org/ja/man/html/irb.html
 
-## commands history
-IRB.conf[:SAVE_HISTORY] = 10000
-
 ## prompt mode
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 
