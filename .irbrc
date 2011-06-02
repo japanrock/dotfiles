@@ -7,6 +7,12 @@ begin
 ## IRB Manual
 # http://www.ruby-lang.org/ja/man/html/irb.html
 
+## commands history
+IRB.conf[:SAVE_HISTORY] = 10000
+
+## prompt mode
+IRB.conf[:PROMPT_MODE] = :SIMPLE
+
 ## rubygems
 require 'rubygems'
 
@@ -68,11 +74,6 @@ require 'what_methods'
 # require 'hirb'
 # Hirb.enable
 # $KCODE = 'e'
-
-## http://irb-history.rubyforge.org/rdoc/
-# IRB has history function already?
-#require 'irb/history'
-#IRB::History.start_client
 
 
 ## setup end -------------------------------------------------------------------------------
