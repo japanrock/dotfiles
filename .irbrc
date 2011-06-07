@@ -10,6 +10,15 @@ begin
 ## prompt mode
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 
+#IRB.conf[:PROMPT][:MY_PROMPT] = {
+#  :PROMPT_I => "%N(%m)>> ",     # normal prompt
+#  :PROMPT_N => "|  ",           # prompt for continuing indent
+#  :PROMPT_C => ".> ",           # prompt for continuing statement
+#  :PROMPT_S => "%l> ",          # prompt for continuing strings
+#  :RETURN   => "=> %s \n"       # format to return value
+#}
+#IRB.conf[:PROMPT_MODE] = :MY_PROMPT
+
 ## rubygems
 require 'rubygems'
 
