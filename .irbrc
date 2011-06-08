@@ -25,6 +25,11 @@ require 'rubygems'
 ## pp
 require 'pp'
 
+## alias for exit
+def x
+  exit
+end
+
 ## view sql when script/consle
 require "active_record"
 ActiveRecord::Base.logger = Logger.new(STDOUT)
