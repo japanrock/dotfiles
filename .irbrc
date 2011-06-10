@@ -6,6 +6,9 @@ begin
 
 ## IRB Manual
 # http://www.ruby-lang.org/ja/man/html/irb.html
+#
+# other reference:
+#  -http://d.hatena.ne.jp/keyesberry/20101116/p1  :lang-ja
 
 ## prompt mode
 IRB.conf[:PROMPT_MODE] = :SIMPLE
@@ -28,6 +31,11 @@ require 'pp'
 ## alias for exit
 def x
   exit
+end
+
+## alias for Time.now
+def now
+  puts Time.now.strftime("%Y/%m/%d(%a) %H:%M:%S")
 end
 
 ## view sql when script/consle
