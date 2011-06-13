@@ -25,6 +25,11 @@ IRB.conf[:PROMPT_MODE] = :SIMPLE
 ## rubygems
 require 'rubygems'
 
+## Editor
+# http://ruby.about.com/od/gems/a/sketches.htm
+require 'sketches'
+Sketches.config :editor => 'vim', :background => false
+
 ## pp
 require 'pp'
 
