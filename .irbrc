@@ -1,3 +1,6 @@
+## README
+# This .irbrc for ruby 1.8.6 
+
 ## for config check
 begin
 
