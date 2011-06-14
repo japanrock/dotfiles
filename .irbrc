@@ -12,6 +12,7 @@ begin
 #
 # other reference:
 #  -http://d.hatena.ne.jp/keyesberry/20101116/p1  :lang-ja
+#  -http://www.ruby-doc.org/docs/ProgrammingRuby/html/irb.html :lang-en
 
 ## prompt mode
 IRB.conf[:PROMPT_MODE] = :SIMPLE
@@ -28,13 +29,20 @@ IRB.conf[:PROMPT_MODE] = :SIMPLE
 ## rubygems
 require 'rubygems'
 
+## pp
+require 'pp'
+
 ## Editor
 # http://ruby.about.com/od/gems/a/sketches.htm
 require 'sketches'
 Sketches.config :editor => 'vim', :background => false
 
-## pp
-require 'pp'
+## view sql when script/consle
+require "active_record"
+ActiveRecord::Base.logger = Logger.new(STDOUT)
+
+## http://doc.okkez.net/static/192/library/irb=2fcompletion.html
+require 'irb/completion'
 
 ## alias for exit
 def x
@@ -46,12 +54,25 @@ def now
   puts Time.now.strftime("%Y/%m/%d(%a) %H:%M:%S")
 end
 
-## view sql when script/consle
-require "active_record"
-ActiveRecord::Base.logger = Logger.new(STDOUT)
+## Return only the methods not present on basic objects
+# http://stackoverflow.com/questions/123494/whats-your-favourite-irb-trick
+class Object
+  def interesting_methods
+    (self.methods - Object.new.methods).sort
+  end
+end
 
-## http://doc.okkez.net/static/192/library/irb=2fcompletion.html
-require 'irb/completion'
+## Quick benchmarking
+# Based on rue's irbrc => http://pastie.org/179534
+# http://stackoverflow.com/questions/123494/whats-your-favourite-irb-trick
+def quick(repetitions=100, &block)
+  require 'benchmark'
+
+  Benchmark.bmbm do |b|
+    b.report {repetitions.times &block} 
+  end
+  nil
+end
 
 ## https://github.com/michaeldv/awesome_print
 require "awesome_print"
