@@ -14,6 +14,9 @@ begin
 #  -http://d.hatena.ne.jp/keyesberry/20101116/p1  :lang-ja
 #  -http://www.ruby-doc.org/docs/ProgrammingRuby/html/irb.html :lang-en
 
+## Other irb Tips
+# http://tagaholic.me/2009/05/11/demystifying-irb-commands.html :lang-en
+
 ## prompt mode
 IRB.conf[:PROMPT_MODE] = :SIMPLE
 
