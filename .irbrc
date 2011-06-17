@@ -57,6 +57,13 @@ def now
   puts Time.now.strftime("%Y/%m/%d(%a) %H:%M:%S")
 end
 
+## alias for nkf
+require 'nkf'
+
+def utf8out(str)
+  NKF.nkf('-w', str)
+end
+
 ## Return only the methods not present on basic objects
 # http://stackoverflow.com/questions/123494/whats-your-favourite-irb-trick
 class Object
