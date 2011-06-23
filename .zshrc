@@ -118,7 +118,7 @@ alias -g co='chekcout'
 # mysql
 alias my='mysql -u root'
 # My mysql prompt
-export MYSQL_PS1='\u@\h[\d]> '
+export MYSQL_PS1='\U[\d]> '
 
 # gems
 alias cd_gems='cd `ruby -rubygems -e "puts Gem.path" | grep "/usr/local"`'
