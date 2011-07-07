@@ -52,6 +52,9 @@ function chpwd() {
   _reg_pwd_screennum
 }
 
+## auto_cd : see http://journal.mycom.co.jp/column/zsh/005/index.html
+setopt auto_cd
+
 ## history
 HISTFILE=$HOME/.zsh-history
 HISTSIZE=100000
