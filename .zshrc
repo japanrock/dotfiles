@@ -44,6 +44,8 @@ export PATH=/usr/local/bin:$PATH
 autoload -U compinit
 compinit
 setopt auto_list
+
+## list_packed : see http://journal.mycom.co.jp/column/zsh/005/index.html
 setopt list_packed
 
 ## cdd : see http://d.hatena.ne.jp/secondlife/20080218/1203303528
@@ -54,6 +56,9 @@ function chpwd() {
 
 ## auto_cd : see http://journal.mycom.co.jp/column/zsh/005/index.html
 setopt auto_cd
+
+## correct : see http://journal.mycom.co.jp/column/zsh/005/index.html
+setopt correct
 
 ## history
 HISTFILE=$HOME/.zsh-history
